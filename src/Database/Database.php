@@ -8,7 +8,7 @@ use stdClass;
 
 class Database {
 
-    private string $defaultConfigPath = '../configs/database.config.php';
+    private string $defaultConfigPath = '../config/database.config.php';
 
     private string $host;
     private string $user;
