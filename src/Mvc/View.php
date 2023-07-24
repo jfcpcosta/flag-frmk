@@ -18,6 +18,11 @@ class View {
             extract($data);
         }
 
+        $helpers = glob('../views/helpers/*.helper.php');
+
+        foreach ($helpers as $helper) {
+            require_once $helper;
+        }
     
         if ($layout) {
             include "../views/common/header.phtml";
